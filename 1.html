@@ -1,0 +1,347 @@
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  #box {
+    width: 100%;
+  }
+
+  .word {
+    width: 1300px;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .head {
+    width: 100%;
+    height: 280px;
+  }
+
+  .head ul li img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .head ul li {
+    float: left;
+    border: 1px solid rgb(214, 214, 214);
+    margin-right: 50px;
+    margin-top: 20px;
+    width: 300px;
+    height: 110px;
+  }
+
+  .oneli {
+    width: 300px;
+    height: 110px;
+  }
+
+  .head ul li p {
+    height: 50px;
+    background-color: #f2f6fc;
+    line-height: 50px;
+    padding-left: 15px;
+  }
+
+  #twoli {
+    width: 240px;
+    height: 240px;
+    float: right;
+    margin-right: 0px;
+    border-radius: 5px;
+    border: 1px solid #ededed;
+  }
+
+  #twoli img {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .head ul li a {
+    line-height: 60px;
+    padding-left: 15px;
+    color: #409eff;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  .imgli img {
+    float: left;
+    margin: 20px 15px 0 15px;
+  }
+
+  .imgli pre {
+    margin-top: 30px;
+    font-size: 18px;
+  }
+
+  .imgli span {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .content {
+    height: 240px;
+    border: 1px solid rgb(214, 214, 214);
+  }
+
+  .onediv {
+    height: 50px;
+    background-color: #f2f6fc;
+    line-height: 50px;
+    padding-left: 15px;
+  }
+
+  .twodiv,
+  .threediv,
+  .fourdiv {
+    width: 300px;
+    height: 140px;
+    float: left;
+    margin: 20px 65px;
+  }
+
+  .content div ul li span {
+    display: inline-block;
+    color: red;
+  }
+
+  .content div ul li span {
+    float: right;
+  }
+
+  .content div ul li p {
+    display: inline-block;
+  }
+
+  .content div ul li {
+    border-bottom: 1px solid rgb(198, 198, 198);
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .footer {
+    width: 100%;
+    height: 230px;
+    margin-top: 40px;
+  }
+
+  .leftdiv {
+    width: 48%;
+    height: 180px;
+    float: left;
+    border: 1px solid rgb(214, 214, 214);
+  }
+
+  .rightdiv {
+    width: 48%;
+    height: 180px;
+    float: right;
+    border: 1px solid rgb(214, 214, 214);
+  }
+
+  .sp {
+    height: 50px;
+    padding-left: 15px;
+    line-height: 50px;
+    ;
+    background-color: #f2f6fc;
+  }
+
+  .footer div ul li {
+    width: 80px;
+    float: left;
+    margin: 20px 35px;
+    text-align: center;
+  }
+
+  .footer div ul li p {
+    font-size: 20px;
+    color: red;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+  .tubiao{
+    margin: auto;
+    width: 1298px;
+    height: 450px;
+    margin-bottom: 50px;
+    border: 1px solid rgb(214, 214, 214);
+  }
+</style>
+
+<body>
+  <div id="box">
+    <div class="word">
+      <!-- 头部 -->
+      <div class="head">
+        <ul>
+          <li class="oneli">
+            <p>学习教程</p>
+            <a href="https://www.macrozheng.com/">mall学习教程</a>
+          </li>
+          <!--  -->
+          <li id="threeli">
+            <p>视频教程</p>
+            <a href="https://www.macrozheng.com/mall/catalog/mall_video.html">mall学习教程(2023)</a>
+          </li>
+          <!--  -->
+          <li class="oneli">
+            <p>点Star支持项目</p>
+            <a href="https://github.com/macrozheng/mall">mall项目</a>
+          </li>
+          <!--  -->
+          <li id="twoli">
+            <img src="./img/1.png" alt="" />
+          </li>
+          <!--  -->
+          <li class="imgli">
+            <img src="./img/我的订单.png" />
+            <pre>今日订单总数</pre>
+            <span>200</span>
+          </li>
+          <!--  -->
+          <li class="imgli">
+            <img src="./img/充值.png" />
+            <pre>今日销售总额</pre>
+            <span>￥ 5000.00</span>
+          </li>
+          <!--  -->
+          <li class="imgli">
+            <img src="./img/金额.png" />
+            <pre>昨日销售总额</pre>
+            <span>￥ 5000.00</span>
+          </li>
+          <!--  -->
+        </ul>
+      </div>
+      <!-- 内容 -->
+      <div class="content">
+        <div class="onediv">
+          <p>待处理事务</p>
+        </div>
+        <!--  -->
+        <div class="twodiv">
+          <ul>
+            <li>
+              <p>待付款订单</p>
+              <span>（10）</span>
+            </li>
+            <!--  -->
+            <li>
+              <p>待发货订单</p>
+              <span>（10）</span>
+            </li>
+            <!--  -->
+            <li>
+              <p>已发货订单</p>
+              <span>（10）</span>
+            </li>
+            <!--  -->
+          </ul>
+        </div>
+        <div class="threediv">
+          <ul>
+            <li>
+              <p>已完成订单</p>
+              <span>（10）</span>
+            </li>
+            <!--  -->
+            <li>
+              <p>新缺货订单</p>
+              <span>（10）</span>
+            </li>
+            <!--  -->
+            <li>
+              <p>待处理退货订单</p>
+              <span>（10）</span>
+            </li>
+            <!--  -->
+          </ul>
+        </div>
+        <div class="fourdiv">
+          <ul>
+            <li>
+              <p>待确认收货订单</p>
+              <span>（10）</span>
+            </li>
+            <!--  -->
+            <li>
+              <p>待处理退款申请</p>
+              <span>（10）</span>
+            </li>
+            <!--  -->
+            <li>
+              <p>广告位即将到期</p>
+              <span>（10）</span>
+            </li>
+          </ul>
+          <!--  -->
+        </div>
+      </div>
+
+      <!-- 尾部 -->
+      <div class="footer">
+        <div class="leftdiv">
+          <p class="sp">商品总览</p>
+          <!--  -->
+          <ul>
+            <li>
+              <p>100</p>
+              <span>已下架</span>
+            </li>
+            <li>
+              <p>400</p>
+              <span>已上架</span>
+            </li>
+            <li>
+              <p>50</p>
+              <span>库存紧张</span>
+            </li>
+            <li>
+              <p>500</p>
+              <span>全部商品</span>
+            </li>
+          </ul>
+        </div>
+        <div class="rightdiv">
+          <p class="sp">用户总览</p>
+          <!--  -->
+          <ul>
+            <li>
+              <p>100</p>
+              <span>今日新增</span>
+            </li>
+            <li>
+              <p>200</p>
+              <span>昨日新增</span>
+            </li>
+            <li>
+              <p>1000</p>
+              <span>本月新增</span>
+            </li>
+            <li>
+              <p>5000</p>
+              <span>会员总数</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="tubiao">
+        <p class="sp">数据总览</p>
+        <iframe src="./home.html" style="width: 100%;height: 400px;">
+      </div>
+    </div>
+  </div>
+  <script src="../../../layui-v2.8.6/layui.js"></script>
+  <script></script>
+</body>
