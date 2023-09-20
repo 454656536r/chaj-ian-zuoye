@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.css">
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.js"> </script>
+</head>
+<style>
+    html,
+    body {
+        position: relative;
+        height: 100%;
+    }
+
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
+
+    .swiper {
+        width: 50%;
+        height: 50%;
+        /* background-color: antiquewhite; */
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .swiper {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .swiper-pagination-fraction,
+    .swiper-pagination-custom,
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+        float: left;
+        width: 300px;
+        /* background-color: aqua; */
+    }
+
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+        background-color: rgb(202, 202, 202);
+        border-radius: 5px;
+        float: left;
+        margin-left: 800px;
+        margin-top: 170px;
+        width: 50px;
+        height: 50px;
+        color: #ffffff;
+        text-align: center;
+        font-size: 30px;
+    }
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+        background-color: rgb(202, 202, 202);
+        border-radius: 5px;
+        float: left;
+        margin-left: 600px;
+        margin-top: 170px;
+        width: 50px;
+        height: 50px;
+        color: #ffffff;
+        text-align: center;
+        font-size: 30px;
+    }
+    .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+        content: '';
+    }
+    .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+        content: '';
+    }
+
+</style>
+
+<body>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/9f954e1b630bee1ec863107fda834594b4731539f9d4f4901ade7138014dd86f4801aaaa40f60662058339a7f9d22652?pictype=scale&from=30113&version=3.3.3.3&fname=3.png&size=750"></div>
+            <div class="swiper-slide"><img src="https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/180a999564b99a6b97048a5e9dc94ba1822e2ef1cf229c33195a71b623af11bae679e2a845e643336c7a646508d272ce?pictype=scale&from=30113&version=3.3.3.3&fname=5.png&size=750"></div>
+            <div class="swiper-slide"><img src="https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/4a9dc321936f5e75ff7ab97fae3ca46fa0886b42d032ee1f407101c971fe767c273003588fec302bdfccd0b223c49fdc?pictype=scale&from=30113&version=3.3.3.3&fname=7.png&size=750"></div>
+            <div class="swiper-slide"><img src="https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/9ba38224ab90c63b532e16fc847a4e620ffb8f7562622aab39ac248c6984e8058b721a8b69bf3983b5f4cfde85cf6579?pictype=scale&from=30113&version=3.3.3.3&fname=9.png&size=750"></div>
+            <div class="swiper-slide"><img src="https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/d28f17218a830f05f4aade83b16b9537dfa8c29f6e5ba2e4d3b83544f6bb05c4f9c01e3c43175faf422907fd55a56b48?pictype=scale&from=30113&version=3.3.3.3&fname=11.png&size=750"></div>
+            <div class="swiper-slide"><img src="https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/52e4417fbc2720743c4512ac13394797621d94f92405afee3f41da58033c3a7460e094e1201f3c7d67f386f2b052ef24?pictype=scale&from=30113&version=3.3.3.3&fname=1.png&size=750"></div>
+            <div class="swiper-slide"><img src="https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/9f954e1b630bee1ec863107fda834594b4731539f9d4f4901ade7138014dd86f4801aaaa40f60662058339a7f9d22652?pictype=scale&from=30113&version=3.3.3.3&fname=3.png&size=750"></div>
+            <div class="swiper-slide"><img src="https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/180a999564b99a6b97048a5e9dc94ba1822e2ef1cf229c33195a71b623af11bae679e2a845e643336c7a646508d272ce?pictype=scale&from=30113&version=3.3.3.3&fname=5.png&size=750"></div>
+            <div class="swiper-slide"><img src="https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/4a9dc321936f5e75ff7ab97fae3ca46fa0886b42d032ee1f407101c971fe767c273003588fec302bdfccd0b223c49fdc?pictype=scale&from=30113&version=3.3.3.3&fname=7.png&size=750"></div>
+            <div class="swiper-slide"><img src="https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/9ba38224ab90c63b532e16fc847a4e620ffb8f7562622aab39ac248c6984e8058b721a8b69bf3983b5f4cfde85cf6579?pictype=scale&from=30113&version=3.3.3.3&fname=9.png&size=750"></div>
+            <div class="swiper-slide"><img src="https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/d28f17218a830f05f4aade83b16b9537dfa8c29f6e5ba2e4d3b83544f6bb05c4f9c01e3c43175faf422907fd55a56b48?pictype=scale&from=30113&version=3.3.3.3&fname=11.png&size=750"></div>
+            <div class="swiper-slide"><img src="https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/52e4417fbc2720743c4512ac13394797621d94f92405afee3f41da58033c3a7460e094e1201f3c7d67f386f2b052ef24?pictype=scale&from=30113&version=3.3.3.3&fname=1.png&size=750"></div>
+        </div>
+        <div class="swiper-button-next">›</div>
+        <div class="swiper-button-prev">‹</div>
+
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>

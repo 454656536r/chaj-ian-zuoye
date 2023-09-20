@@ -24,10 +24,12 @@
   .layui-layout-left {
     left: 15px;
   }
-  .iconfont{
+
+  .iconfont {
     float: left;
   }
-  iframe{
+
+  iframe {
     width: 100%;
     height: 100vh;
   }
@@ -37,9 +39,9 @@
   <div class="layui-layout layui-layout-admin">
     <div class="layui-header">
       <!-- 头部区域（可配合layui 已有的水平导航） -->
-      
+
       <ul class="layui-nav layui-layout-left">
-        
+
       </ul>
       <ul class="layui-nav layui-layout-right">
         <li class="layui-nav-item layui-hide layui-show-sm-inline-block">
@@ -62,9 +64,9 @@
     </div>
     <div class="layui-side layui-bg-black">
       <div class="layui-side-scroll">
-        
+
         <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
-        <ul class="layui-nav layui-nav-tree" lay-filter="test"id="left-menu"></ul>
+        <ul class="layui-nav layui-nav-tree" lay-filter="test" id="left-menu"></ul>
       </div>
     </div>
     <div class="layui-body">
@@ -74,7 +76,7 @@
           <div class="layui-card-body">
             <iframe src="./1.html" frameborder="0"></iframe>
           </div>
-          <br><br>
+
         </div>
       </div>
     </div>
@@ -102,7 +104,7 @@
                   html += `<li class="layui-nav-item layui-nav-itemed">
                   <a class="" href="javascript:;"><i class="iconfont ${item.icon}"></i>&emsp;${item.title}<i class="layui-icon layui-icon-down layui-nav-more icon-color"></i></a>`
                   if (item.children.length > 0) {
-                    html+=`<dl class="layui-nav-child">`
+                    html += `<dl class="layui-nav-child">`
                     item.children.forEach((child) => {
                       html += `<dd><i class="iconfont ${child.icon}"></i><a href="javascript:;">${child.title}</a></dd>`
                     })
@@ -111,7 +113,7 @@
                 });
               }
               $("#left-menu").html(html)
-              $(".layui-nav-item a").click(function(){
+              $(".layui-nav-item a").click(function () {
                 $(this).parent().toggleClass("layui-nav-itemed")
               })
             }
