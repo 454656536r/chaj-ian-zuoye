@@ -56,7 +56,7 @@
           </dl>
         </li>
         <li class="layui-nav-item" lay-header-event="menuRight" lay-unselect>
-          <a href="javascript:;">
+          <a href="javascript:;" id="sds">
             <i class="layui-icon layui-icon-more-vertical"></i>
           </a>
         </li>
@@ -102,7 +102,7 @@
                 var html = ``
                 res.data.forEach((item) => {
                   html += `<li class="layui-nav-item layui-nav-itemed">
-                  <a class="" href="javascript:;"><i class="iconfont ${item.icon}"></i>&emsp;${item.title}<i class="layui-icon layui-icon-down layui-nav-more icon-color"></i></a>`
+                  <a class="" href="javascript:;"><i class="iconfont ${item.icon}"></i>${item.title}<i class="layui-icon layui-icon-down layui-nav-more icon-color"></i></a>`
                   if (item.children.length > 0) {
                     html += `<dl class="layui-nav-child">`
                     item.children.forEach((child) => {
@@ -119,7 +119,9 @@
             }
           })
         })()
-
+        $("#sds").click(function(){
+          console.log(123);
+        })
 
         //头部事件
         util.event('lay-header-event', {
@@ -140,7 +142,46 @@
             });
           }
         });
+        $("#left-menu").on("click", ".layui-nav-item dd", function () {
+        let an = $(this).text().trim();
+        switch (an) {
+          case "地图":
+            $(".layui-card-body").html(
+              `<object data="./插件/吾悦路线.html" width="100%" height="1000px"></object>`
+            );
+            break;
+          case "爱奇艺1":
+            $(".layui-card-body").html(
+              `<object data="./插件/轮播1.html" width="100%" height="1000px"></object>`
+            );
+            break;
+          case "爱奇艺2":
+            $(".layui-card-body").html(
+              `<iframe src="./插件/爱奇艺.html"></iframe>`
+            );
+            break;
+          case "哔哩哔哩":
+            $(".layui-card-body").html(
+              `<iframe src="./插件/哔哩哔哩.html"></iframe>`
+            );
+            break;
+          case "原神1":
+            $(".layui-card-body").html(
+              `<iframe src="./插件/原神1.html"></iframe>`
+            );
+            break;
+          case "原神2":
+            $(".layui-card-body").html(
+              `<iframe src="./插件/原神2.html"></iframe>`
+            );
+            break;
+        }
       });
+      });
+
+
+      
+     
     </script>
 </body>
 

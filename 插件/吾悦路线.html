@@ -12,8 +12,8 @@
     <input type="text" id="myInput" placeholder="请输入起点" />
     <input type="text" id="myInputs" placeholder="请输入终点" />
     <button id="show">规划</button>
-    <div id="container" style="width: 1300px; height: 800px"></div>
-    <div id="panel" style="width: 1300px; height: 500px"></div>
+    <div id="container" style="width: 1300px; height: 100vh"></div>
+    <div id="panel" style="width: 1300px; height: 1000px"></div>
     <style>
         #container {
             margin: auto;
@@ -87,6 +87,7 @@
             map: map,
             panel: "panel",
         });
+        
         document.getElementById("showScoresBtn").addEventListener("click", function () {
             driving.search([113.428749, 34.765308], [113.42857, 34.772388]);
         });

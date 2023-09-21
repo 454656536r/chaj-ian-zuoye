@@ -7,8 +7,28 @@
          "icon":"icon-shouye",
          "children":[
             {
-               "title":"仪表盘",
-               "icon":"icon-yibiaopan"
+               "title":"地图",
+               "icon":"icon-gongzuoleixing"
+            },
+            {
+               "title":"爱奇艺1",
+               "icon":"icon-gongzuoleixing"
+            },
+            {
+               "title":"爱奇艺2",
+               "icon":"icon-gongzuoleixing"
+            },
+            {
+               "title":"哔哩哔哩",
+               "icon":"icon-gongzuoleixing"
+            },
+            {
+               "title":"原神1",
+               "icon":"icon-gongzuoleixing"
+            },
+            {
+               "title":"原神2",
+               "icon":"icon-gongzuoleixing"
             },
             {
                "title":"学习教程",
